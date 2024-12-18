@@ -1,0 +1,16 @@
+{
+  "theme": "default",
+  "themeVariables": {
+    "fontSize": "16px",
+    "fontFamily": "arial",
+    "lineHeight": "1.4"
+  },
+  "flowchart": {
+    "htmlLabels": true,
+    "curve": "basis",
+    "padding": 15
+  },
+  "themeCSS": "g.classGroup text { font-size: 16px !important; }",
+  "maxTextSize": 5000,
+  "backgroundColor": "#ffffff"
+}

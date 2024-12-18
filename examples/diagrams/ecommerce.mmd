@@ -1,0 +1,39 @@
+erDiagram
+    User ||--o{ Order : creates
+    Order ||--|{ Product : contains
+    Order ||--|| Payment : has
+    Order ||--|| Shipping : requires
+
+    User {
+        string id
+        string username
+        string phone
+        string address
+    }
+
+    Order {
+        string order_id
+        datetime created_at
+        string status
+    }
+
+    Product {
+        string id
+        string name
+        float price
+        int stock
+    }
+
+    Payment {
+        string payment_id
+        string method
+        string status
+        float amount
+    }
+
+    Shipping {
+        string tracking_id
+        string status
+        string address
+        datetime estimated_delivery
+    }

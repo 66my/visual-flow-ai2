@@ -1,0 +1,28 @@
+graph TD
+    Root[项目结构] --> A[源代码]
+    Root --> B[文档]
+    Root --> C[测试]
+    Root --> D[配置]
+
+    A --> A1[组件]
+    A --> A2[服务]
+    A --> A3[工具]
+
+    B --> B1[API文档]
+    B --> B2[使用说明]
+    B --> B3[示例]
+
+    C --> C1[单元测试]
+    C --> C2[集成测试]
+    C --> C3[性能测试]
+
+    D --> D1[环境配置]
+    D --> D2[构建配置]
+    D --> D3[部署配置]
+
+    classDef default fill:#f9f,stroke:#333,stroke-width:1px;
+    classDef root fill:#f96,stroke:#333,stroke-width:2px;
+    classDef category fill:#bbf,stroke:#333,stroke-width:1px;
+
+    class Root root;
+    class A,B,C,D category;

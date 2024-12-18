@@ -1,0 +1,21 @@
+graph TD
+    A[挂号] --> B[初诊]
+    B --> C{需要检查?}
+    C -->|是| D[检验/检查]
+    C -->|否| E[诊断]
+    D --> E
+    E --> F{需要用药?}
+    F -->|是| G[开具处方]
+    F -->|否| H[建议与指导]
+    G --> I[取药]
+    I --> J[用药指导]
+    H --> K[结束就诊]
+    J --> K
+
+    classDef process fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef decision fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef endpoint fill:#bfb,stroke:#333,stroke-width:2px;
+
+    class A,B,D,E,G,H,I,J process;
+    class C,F decision;
+    class K endpoint;

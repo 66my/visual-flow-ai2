@@ -1,0 +1,64 @@
+{
+  "name": "diagen",
+  "version": "1.0.0",
+  "author": "lgmoon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgmoon/diagen.git"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "bin": {
+    "diagen": "./dist/run.js"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.7.26",
+    "@types/bun": "^1.1.10",
+    "@types/node": "^22.7.4",
+    "typescript": "^5.6.2"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "description": "Create beautiful, reflective diagrams from code and data.",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "type": "module",
+  "types": "./dist/index.d.cts",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.28.0",
+    "@anthropic-ai/tokenizer": "^0.0.4",
+    "@google/generative-ai": "^0.21.0",
+    "@inquirer/prompts": "^7.0.0",
+    "@mermaid-js/mermaid-cli": "^11.4.2",
+    "@types/glob": "^8.1.0",
+    "axios": "^1.7.9",
+    "cli-progress": "^3.12.0",
+    "dotenv": "^16.4.5",
+    "glob": "^11.0.0",
+    "mermaid": "^11.4.1",
+    "open": "^10.1.0",
+    "openai": "^4.67.1",
+    "ora": "^8.1.0",
+    "sharp": "^0.33.5",
+    "tip20": "^0.0.5",
+    "tsup": "^8.3.0",
+    "uuid": "^10.0.0",
+    "zhipuai": "^2.0.0"
+  }
+}
