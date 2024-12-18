@@ -1,4 +1,4 @@
-# Diagen - AI-Powered Diagram Generator
+# Visual Flow AI - 智能流程图生成工具
 
 <div align="center">
     <img src="examples/diagrams/project_structure.png" alt="Project Structure Example" width="600"/>
@@ -6,7 +6,7 @@
 
 ## 简介
 
-Diagen 是一个基于 AI 的智能图表生成工具，能够从文本描述自动生成各种专业图表。它使用 Zhipu AI 进行文本理解，并通过 Mermaid 生成高质量的可视化图表。
+Visual Flow AI 是一个基于 AI 的智能流程图生成工具，能够从文本描述自动生成各种专业图表。它使用 Zhipu AI 进行文本理解，并通过 Mermaid 生成高质量的可视化图表。
 
 ## 特性
 

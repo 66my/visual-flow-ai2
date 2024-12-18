@@ -1,15 +1,16 @@
 {
-  "name": "diagen",
+  "name": "visual-flow-ai",
   "version": "1.0.0",
   "author": "lgmoon",
+  "description": "基于 AI 的智能流程图生成工具，支持从文本描述自动生成各类专业图表，包括流程图、时序图、类图等。支持中文，界面简洁直观。",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lgmoon/diagen.git"
+    "url": "git+https://github.com/lgmoon/visual-flow-ai.git"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "bin": {
-    "diagen": "./dist/run.js"
+    "visual-flow": "./dist/run.js"
   },
   "devDependencies": {
     "@swc/core": "^1.7.26",
@@ -29,7 +30,6 @@
       }
     }
   },
-  "description": "Create beautiful, reflective diagrams from code and data.",
   "files": [
     "dist",
     "package.json"
