@@ -1,7 +1,14 @@
 # Visual Flow AI - 智能流程图生成工具
 
 <div align="center">
+    <h3>项目结构图示例</h3>
     <img src="examples/diagrams/project_structure.png" alt="Project Structure Example" width="600"/>
+    
+    <h3>电商系统流程图示例</h3>
+    <img src="examples/diagrams/ecommerce.png" alt="E-commerce Flow Example" width="600"/>
+    
+    <h3>医疗工作流程图示例</h3>
+    <img src="examples/diagrams/medical_workflow.png" alt="Medical Workflow Example" width="600"/>
 </div>
 
 ## 简介

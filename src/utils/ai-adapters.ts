@@ -18,7 +18,10 @@ export const grokAdapter = {
     messages: Message[],
     systemPrompt?: string
   ) => {
-    const apiKey = "xai-X4q4sBVXt1QaACoTkP9XPZBar4ePrwCzQsPEj2iPEtNFyLoDuQdIWkn5Pr9oQMjDto0cHzoy122HdjzI";
+    const apiKey = process.env.XAI_API_KEY;
+    if (!apiKey) {
+      throw new Error('XAI_API_KEY environment variable is not set');
+    }
     
     try {
       const response = await axios({
@@ -62,7 +65,10 @@ export const zhipuAdapter = {
     messages: Message[],
     systemPrompt?: string
   ) => {
-    const apiKey = "25252cf34711146fe210453392a841cb.ykKVOBK71ANZ7HwN";
+    const apiKey = process.env.ZHIPU_API_KEY;
+    if (!apiKey) {
+      throw new Error('ZHIPU_API_KEY environment variable is not set');
+    }
     try {
       const response = await axios({
         method: 'post',

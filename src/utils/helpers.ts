@@ -59,7 +59,9 @@ export const checkModelAuthExists = (
   silent: boolean = false
 ): boolean => {
   if (isGrokModel(model)) {
-    const key = "sk-or-v0-cd3c2a2c5b8c4c4c9b9b9b9b9b9b9b9b";
+    const config = {
+      model: process.env.AI_MODEL || 'default-model',
+    };
     return true;
   }
   return false;

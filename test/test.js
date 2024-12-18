@@ -1,8 +1,11 @@
 import { diagen } from '../dist/index.js';
 import fs from 'fs';
 
-// 设置 API key
-process.env.ZHIPU_API_KEY = '25252cf34711146fe210453392a841cb.ykKVOBK71ANZ7HwN';
+// 检查环境变量中的 API 密钥
+if (!process.env.ZHIPU_API_KEY) {
+  console.error('请设置 ZHIPU_API_KEY 环境变量');
+  process.exit(1);
+}
 
 // 读取原始数据
 const data = fs.readFileSync('../raw_data_肉桂_simplified.md', 'utf-8');

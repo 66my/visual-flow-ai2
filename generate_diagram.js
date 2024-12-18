@@ -2,8 +2,11 @@ import { diagen } from './dist/index.js';
 import fs from 'fs';
 import path from 'path';
 
-// 设置智谱API密钥
-process.env.ZHIPU_API_KEY = "25252cf34711146fe210453392a841cb.ykKVOBK71ANZ7HwN";
+// 检查环境变量中的 API 密钥
+if (!process.env.ZHIPU_API_KEY) {
+  console.error('请设置 ZHIPU_API_KEY 环境变量');
+  process.exit(1);
+}
 
 // 读取示例文件
 const exampleFile = process.argv[2] || './raw_data_肉桂_simplified.md';
